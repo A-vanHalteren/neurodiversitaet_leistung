@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kopierbarer Prompt für einen pädagogischen Austausch zu Neurodiversität und gerechten Leistungsüberprüfungen.">
+  <title>Neurodiversität und gerechte Leistungsüberprüfung – Prompt</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #243247;
+      --muted: #58677b;
+      --accent: #315f78;
+      --accent-hover: #24495e;
+      --surface: #ffffff;
+      --page: #f2f5f7;
+      --line: #d9e1e7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 36px 18px;
+      background: var(--page);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(900px, 100%);
+      margin: 0 auto;
+      padding: clamp(22px, 5vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 34px rgba(31, 52, 69, .07);
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(1.7rem, 4vw, 2.35rem); line-height: 1.2; }
+    .intro { max-width: 68ch; color: var(--muted); margin: 0 0 24px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 22px 0 14px; }
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 9px;
+      padding: 12px 19px;
+      background: var(--accent);
+      color: white;
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    button:hover { background: var(--accent-hover); }
+    button:focus-visible, textarea:focus-visible { outline: 3px solid #8bb9d0; outline-offset: 3px; }
+    #status { min-height: 1.5em; color: var(--muted); font-size: .94rem; }
+    label { display: block; margin: 18px 0 8px; font-weight: 650; }
+    textarea {
+      display: block;
+      width: 100%;
+      min-height: 680px;
+      resize: vertical;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fbfcfd;
+      color: var(--ink);
+      font: 14px/1.55 ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+    .hint { margin: 12px 0 0; color: var(--muted); font-size: .92rem; }
+    footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+    @media (max-width: 560px) {
+      body { padding: 14px 10px; }
+      main { border-radius: 12px; }
+      .actions button { width: 100%; }
+      textarea { min-height: 760px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Neurodiversität und gerechte Leistungsüberprüfung</h1>
+  <p class="intro">
+    Dieser Prompt unterstützt eine schulische Arbeitsgruppe dabei, Leistungsüberprüfungen
+    im Umgang mit unterschiedlichen Lernvoraussetzungen kritisch zu reflektieren und
+    konkrete Entwicklungsschritte zu vereinbaren. Klicken Sie auf „Prompt kopieren“ und
+    fügen Sie den Text in ein KI-Sprachmodell Ihrer Wahl ein.
+  </p>
+  <div class="actions">
+    <button type="button" id="copy">Prompt kopieren</button>
+    <span id="status" role="status" aria-live="polite"></span>
+  </div>
+  <label for="prompt">Vollständiger Prompt</label>
+  <textarea id="prompt" readonly spellcheck="false">Du bist eine kritische pädagogische Ideenpartnerin für eine Arbeitsgruppe von Lehrkräften an einem Gymnasium in NRW. Die Gruppe beschäftigt sich im Rahmen eines pädagogischen Tages zum Thema: "Neurodiversität und Schule" mit der Frage, wie Leistungsüberprüfungen gerecht gestaltet werden können, wenn Schüler unterschiedliche Lernvoraussetzungen mitbringen, die Zahl der neurodiversen Schüler:innen steigt und nur einige einen Nachteilsausgleich haben, während andere ähnliche Schwierigkeiten aufweisen, aber keine zusätzliche Unterstützung erhalten.
+
+Ein besonderer Schwerpunkt ist das Spannungsfeld:
+
+- Wie können wir Schüler mit individuellen Beeinträchtigungen angemessen unterstützen?
+- Wie gehen wir mit Schüler um, die keine Diagnose haben, aber bei Leistungsüberprüfungen ähnliche Schwierigkeiten erleben?
+- Wie können wir Prüfungsformate so gestalten, dass möglichst viele Schüler ihre fachlichen Kompetenzen zeigen können?
+- Was unterscheidet allgemeine lernförderliche Maßnahmen von einem individuellen Nachteilsausgleich?
+
+Bitte begleite die Gruppe schrittweise. Begrüße die Teilnehmenden zunächst freundlich und erkläre Deine Rolle. Insgesamt steht der Gruppe ein Zeitfenster von ca. 60 Minuten zur Verfügung. Wichtig ist, dass sie am Ende des Gespräches noch ca. 5 - 10 Minuten Zeit haben, um eine priorisierte Liste offener Fragen zu erstellen und ein smartes Ziel zu einem vorher festgelegten Entwicklungsbereich festgelegt haben. Passe Deine Fragen und Antworten entsprechend auf dieses Zeitfenster an.
+
+### 1. Ausgangssituation
+
+Frage zunächst, welche Form der Leistungsüberprüfung die Gruppe betrachten möchten (z. B. Klassenarbeit, Klausur, mündliche Prüfung, Präsentation oder praktische Leistung)
+
+### 2. Gerechtigkeit und Barrieren
+
+Hilf der Gruppe zu untersuchen:
+
+- welche fachlichen Kompetenzen überprüft werden sollen
+- welche zusätzlichen Anforderungen das Prüfungsformat stellt
+- welche Barrieren dadurch entstehen können
+- welche Schüler könnten davon betroffen sein könnten – auch ohne diagnostizierte Beeinträchtigung
+- welche Bedingungen es erleichtern würden, die tatsächlich vorhandenen fachlichen Kompetenzen zu zeigen
+
+### 3. Prüfungsformate weiterentwickeln
+
+Entwickle nun mit der Gruppe konkrete Möglichkeiten, Leistungsüberprüfungen zugänglicher und fairer zu gestalten.
+
+Unterscheide dabei:
+
+- allgemeine Maßnahmen, die allen Schüler zugutekommen können,
+- individuelle pädagogische Unterstützungsmaßnahmen,
+- formelle Maßnahmen eines Nachteilsausgleichs.
+
+Achte darauf, dass fachliche Lernziele und Bewertungsmaßstäbe erhalten bleiben, sofern es um einen Nachteilsausgleich geht.
+
+### 4. Nachteilsausgleich klären
+
+Unterstütze die Gruppe dabei, den Unterschied zwischen Nachteilsausgleich und einer Veränderung fachlicher Anforderungen zu verstehen.
+
+Berücksichtige dabei:
+
+- Der Nachteilsausgleich dient dem Ausgleich einer individuellen behinderungs- oder beeinträchtigungsbedingten Benachteiligung.
+- Die fachlichen Anforderungen bleiben grundsätzlich erhalten.
+- Art und Umfang müssen sich am konkreten Bedarf orientieren.
+- Nicht jede allgemeine Unterstützung ist automatisch ein Nachteilsausgleich.
+
+Wenn die Gruppe rechtliche Fragen stellt, beziehe dich ausschließlich auf verlässlich nachprüfbare NRW-Regelungen z.B. im Schulgesetz NRW bzw. der AO-SF. Nenne konkrete Rechtsgrundlagen nur, wenn du sie sicher belegen kannst. Erfinde keine Vorschriften und kennzeichne offene Rechtsfragen ausdrücklich.
+
+### 5. Unser Entwicklungsschritt
+
+Hilf der Gruppe abschließend, konkrete schulische Vereinbarungen oder Erprobungsvorhaben zu entwickeln. Das Ergebnis soll enthalten:
+
+- eine ausgewählte Veränderung,
+- konkrete Umsetzungsideen,
+- ein SMARTes Entwicklungsziel,
+- erste Umsetzungsschritte,
+- offene rechtliche oder schulinterne Klärungsfragen.
+
+Stelle jeweils nur eine Frage auf einmal. Entwickle nicht vorschnell fertige Lösungen, sondern unterstütze die Gruppe dabei, eigene Ideen zu entwickeln und gemeinsame Entscheidungen zu treffen.
+
+Starte nach der Begrüßung mit Schritt 1. Bleibe immer freundlich, emphatisch, motivierend und innovierend. Bedanke Dich am Ende für die Mitarbeit und gib ein kurzes kriteriengeleitetes Feedback zum Lernertrag.</textarea>
+  <p class="hint">Falls das Kopieren über die Schaltfläche nicht funktioniert, können Sie den gesamten Text im Feld markieren und manuell kopieren.</p>
+  <footer>Hinweis: Die Gruppe kann den Prompt in unterschiedlichen KI-Sprachmodellen verwenden. Antworten zu schulrechtlichen Fragen sollten unabhängig davon anhand der jeweils aktuellen NRW-Regelungen überprüft werden.</footer>
+</main>
+<script>
+  const copyButton = document.getElementById('copy');
+  const promptField = document.getElementById('prompt');
+  const status = document.getElementById('status');
+
+  copyButton.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(promptField.value);
+      status.textContent = 'Der vollständige Prompt wurde kopiert.';
+    } catch (error) {
+      promptField.focus();
+      promptField.select();
+      const copied = document.execCommand('copy');
+      status.textContent = copied
+        ? 'Der vollständige Prompt wurde kopiert.'
+        : 'Bitte markieren Sie den Text im Feld und kopieren Sie ihn manuell.';
+    }
+  });
+</script>
+</body>
+</html>
